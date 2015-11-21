@@ -7,3 +7,5 @@ public/tests
 public/crossdomain.xml
 public/robots.txt
 public/testem.js
+public/client*
+public/vendor*

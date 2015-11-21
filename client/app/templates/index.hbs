@@ -1,1 +1,13 @@
-<h2>Index page landing content</h2>
+<div class="keyword-container">
+    {{#link-to 'news' 1}}
+        <span class="keyword">
+            Refugees
+        </span>
+    {{/link-to}}
+
+    {{#each model as |keyword|}}
+        {{#link-to 'demo'}}
+            <span class="keyword">{{keyword}}</span>
+        {{/link-to}}
+    {{/each}}
+</div>

@@ -2,7 +2,12 @@ import Ember from 'ember';
 
 
 export default Ember.Route.extend({
-    // model() {
-    //     this._super();
-    // }
+    model(params, transition) {
+        const keywords = [
+            'syria',
+            'whatever'
+        ];
+
+        return keywords;
+    }
 });

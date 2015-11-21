@@ -1,5 +1,20 @@
 @import 'variables';
 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+body {
+    font-family: 'Roboto Slab', serif;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        color: #FF1111;
+    }
+}
+
 #title-bar {
     position: fixed;
     width: 100%;
@@ -10,10 +25,22 @@
         position: relative;
         line-height: 40px;
         margin: 0 0 0 20px;
+        font-weight: bold;
+        font-size: 25px;
     }
 }
 
 #main-content {
     position: relative;
     top: 40px + $content-top-margin;
+
+    .keyword-container {
+        position: relative;
+        display: flex;
+        margin: 0 20px;
+
+        a {
+            margin-right: 20px;
+        }
+    }
 }
