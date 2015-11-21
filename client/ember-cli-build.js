@@ -20,6 +20,8 @@ module.exports = function(defaults) {
     }
   });
 
+  app.import('bower_components/normalize.css/normalize.css');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

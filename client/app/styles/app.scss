@@ -1,0 +1,19 @@
+@import 'variables';
+
+#title-bar {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid $title-bar-border-color;
+
+    p.title-text {
+        position: relative;
+        line-height: 40px;
+        margin: 0 0 0 20px;
+    }
+}
+
+#main-content {
+    position: relative;
+    top: 40px + $content-top-margin;
+}

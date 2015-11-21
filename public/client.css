@@ -1,0 +1,13 @@
+#title-bar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #000000; }
+  #title-bar p.title-text {
+    position: relative;
+    line-height: 40px;
+    margin: 0 0 0 20px; }
+
+#main-content {
+  position: relative;
+  top: 60px; }
