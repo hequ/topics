@@ -94,7 +94,7 @@ define('client/router', ['exports', 'ember', 'client/config/environment'], funct
   });
 
   Router.map(function () {
-    this.route('news', { path: '/news/:news_id' });
+    this.route('news', { path: '/news' });
   });
 
   exports['default'] = Router;
@@ -105,6 +105,9 @@ define('client/routes/application', ['exports', 'ember'], function (exports, _em
         //     this._super();
         // }
     });
+});
+define('client/routes/news', ['exports', 'ember'], function (exports, _ember) {
+  exports['default'] = _ember['default'].Route.extend({});
 });
 define("client/templates/application", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
@@ -301,7 +304,7 @@ define("client/templates/news", ["exports"], function (exports) {
 /* jshint ignore:start */
 
 define('client/config/environment', ['ember'], function(Ember) {
-  return { 'default': {"modulePrefix":"client","environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"name":"client","version":"0.0.0+0291e4ac"},"contentSecurityPolicyHeader":"Content-Security-Policy-Report-Only","contentSecurityPolicy":{"default-src":"'none'","script-src":"'self' 'unsafe-eval'","font-src":"'self'","connect-src":"'self'","img-src":"'self'","style-src":"'self'","media-src":"'self'"},"exportApplicationGlobal":true}};
+  return { 'default': {"modulePrefix":"client","environment":"development","baseURL":"/","locationType":"hash","EmberENV":{"FEATURES":{}},"APP":{"name":"client","version":"0.0.0+0291e4ac"},"contentSecurityPolicyHeader":"Content-Security-Policy-Report-Only","contentSecurityPolicy":{"default-src":"'none'","script-src":"'self' 'unsafe-eval'","font-src":"'self'","connect-src":"'self'","img-src":"'self'","style-src":"'self'","media-src":"'self'"},"exportApplicationGlobal":true}};
 });
 
 if (!runningTests) {
