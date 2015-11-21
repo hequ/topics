@@ -106,16 +106,10 @@ define('client/router', ['exports', 'ember', 'client/config/environment'], funct
         location: _clientConfigEnvironment['default'].locationType
     });
 
-<<<<<<< HEAD
-  Router.map(function () {
-    this.route('news', { path: '/news' });
-  });
-=======
     Router.map(function () {
         this.route('news');
         this.route('demo');
     });
->>>>>>> 3c8617b... added more stuff to index and news routes
 
     exports['default'] = Router;
 });
@@ -139,9 +133,6 @@ define('client/routes/news', ['exports', 'ember'], function (exports, _ember) {
             });
         }
     });
-});
-define('client/routes/news', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Route.extend({});
 });
 define("client/templates/application", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
