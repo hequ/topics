@@ -1,6 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 .vagrant
-tmp
-cookbooks
-Cheffile*
+node_modules
