@@ -3,13 +3,21 @@ var Q = require("q");
 var request = require('request');
 var _ = require('lodash');
 var rssParser = require('rss-parse-promise');
+var MongoClient = require('mongodb').MongoClient;
+
+
 
 var app = express();
 app.use(express.static('public'));
+var url = 'mongodb://localhost:27017/development';
 
-app.get('/news', function (req, res) {
-    rssParser('http://rss.cnn.com/rss/edition_world.rss').then(function (value) {
-        res.send(_.pluck(value, 'title'));
+app.get('/api/news', function (req, res) {
+    MongoClient.connect(url, function(err, db) {
+        var articles = db.collection("articles");
+
+        articles.find({}).toArray(function(err, art) {
+            res.send(art);
+        });
     });
 });
 

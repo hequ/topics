@@ -7,6 +7,7 @@
     "express": "^4.13.3",
     "feedparser": "^1.1.4",
     "lodash": "^3.10.1",
+    "mongodb": "^2.0.49",
     "q": "^1.4.1",
     "request": "^2.67.0",
     "rss-parse-promise": "0.0.1"
