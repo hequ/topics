@@ -2,3 +2,8 @@
 .idea
 .vagrant
 node_modules
+public/assets
+public/tests
+public/crossdomain.xml
+public/robots.txt
+public/testem.js

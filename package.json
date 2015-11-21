@@ -4,7 +4,9 @@
   "description": "topicsio",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.13.3",
     "feedparser": "^1.1.4",
+    "lodash": "^3.10.1",
     "q": "^1.4.1",
     "request": "^2.67.0",
     "rss-parse-promise": "0.0.1"
