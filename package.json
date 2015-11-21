@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "topicsio",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "feedparser": "^1.1.4",
+    "q": "^1.4.1",
+    "request": "^2.67.0",
+    "rss-parse-promise": "0.0.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
