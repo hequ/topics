@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 body {
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Roboto Slab', serif;
+  background-image: url("images/cool_bg.png"), -webkit-radial-gradient(50% 100%, circle, rgba(0, 0, 0, 0.45) 1%, rgba(0, 0, 0, 0.81) 91%);
+  background-image: url("images/cool_bg.png"), radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.45) 1%, rgba(0, 0, 0, 0.81) 91%);
+  background-size: cover; }
   body a {
     text-decoration: none;
     color: inherit; }

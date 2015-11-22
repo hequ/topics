@@ -4,6 +4,11 @@
 
 body {
     font-family: 'Roboto Slab', serif;
+    // display: block;
+    // height: 100vh;
+    background-image: url('images/cool_bg.png'), -webkit-radial-gradient(50% 100%, circle, rgba(0, 0, 0, 0.45) 1%, rgba(0, 0, 0, 0.81) 91%);
+    background-image: url('images/cool_bg.png'), radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.45) 1%, rgba(0, 0, 0, 0.81) 91%);
+    background-size: cover;
 
     a {
         text-decoration: none;

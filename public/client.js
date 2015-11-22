@@ -497,7 +497,7 @@ define("client/templates/index", ["exports"], function (exports) {
         morphs[1] = dom.createMorphAt(element0, 3, 3);
         return morphs;
       },
-      statements: [["block", "link-to", ["news", 1], [], 0, null, ["loc", [null, [2, 4], [6, 16]]]], ["block", "each", [["get", "model", ["loc", [null, [8, 12], [8, 17]]]]], [], 1, null, ["loc", [null, [8, 4], [12, 13]]]]],
+      statements: [["block", "link-to", ["news"], [], 0, null, ["loc", [null, [2, 4], [6, 16]]]], ["block", "each", [["get", "model", ["loc", [null, [8, 12], [8, 17]]]]], [], 1, null, ["loc", [null, [8, 4], [12, 13]]]]],
       locals: [],
       templates: [child0, child1]
     };
@@ -590,11 +590,11 @@ define("client/templates/news", ["exports"], function (exports) {
 /* jshint ignore:start */
 
 define('client/config/environment', ['ember'], function(Ember) {
-  return { 'default': {"modulePrefix":"client","environment":"development","baseURL":"/","locationType":"hash","EmberENV":{"FEATURES":{}},"APP":{"name":"client","version":"0.0.0+0291e4ac"},"contentSecurityPolicyHeader":"Content-Security-Policy-Report-Only","contentSecurityPolicy":{"default-src":"'none'","script-src":"'self' 'unsafe-eval'","font-src":"'self'","connect-src":"'self'","img-src":"'self'","style-src":"'self'","media-src":"'self'"},"exportApplicationGlobal":true}};
+  return { 'default': {"modulePrefix":"client","environment":"development","baseURL":"/","locationType":"hash","EmberENV":{"FEATURES":{}},"APP":{"name":"client","version":"0.0.0+58bde73c"},"contentSecurityPolicyHeader":"Content-Security-Policy-Report-Only","contentSecurityPolicy":{"default-src":"'none'","script-src":"'self' 'unsafe-eval'","font-src":"'self'","connect-src":"'self'","img-src":"'self'","style-src":"'self'","media-src":"'self'"},"exportApplicationGlobal":true}};
 });
 
 if (!runningTests) {
-  require("client/app")["default"].create({"name":"client","version":"0.0.0+0291e4ac"});
+  require("client/app")["default"].create({"name":"client","version":"0.0.0+58bde73c"});
 }
 
 /* jshint ignore:end */
