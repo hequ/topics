@@ -505,6 +505,47 @@ define("client/templates/index", ["exports"], function (exports) {
 });
 define("client/templates/news", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
+    var child0 = (function () {
+      return {
+        meta: {
+          "fragmentReason": false,
+          "revision": "Ember@2.2.0",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 3,
+              "column": 4
+            },
+            "end": {
+              "line": 6,
+              "column": 4
+            }
+          },
+          "moduleName": "client/templates/news.hbs"
+        },
+        isEmpty: false,
+        arity: 1,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("        ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("div");
+          dom.setAttribute(el1, "class", "iframe-container");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes() {
+          return [];
+        },
+        statements: [],
+        locals: ["news"],
+        templates: []
+      };
+    })();
     return {
       meta: {
         "fragmentReason": {
@@ -519,7 +560,7 @@ define("client/templates/news", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 8,
+            "line": 11,
             "column": 6
           }
         },
@@ -536,16 +577,18 @@ define("client/templates/news", ["exports"], function (exports) {
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("button");
+        dom.setAttribute(el2, "class", "previous");
         var el3 = dom.createTextNode("Previous");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n    ");
+        var el2 = dom.createTextNode("\n");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("iframe");
+        var el2 = dom.createComment("");
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n    ");
+        var el2 = dom.createTextNode("    ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("button");
+        dom.setAttribute(el2, "class", "next");
         var el3 = dom.createTextNode("Next");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
@@ -568,18 +611,17 @@ define("client/templates/news", ["exports"], function (exports) {
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var element0 = dom.childAt(fragment, [0]);
         var element1 = dom.childAt(element0, [1]);
-        var element2 = dom.childAt(element0, [3]);
-        var element3 = dom.childAt(element0, [5]);
+        var element2 = dom.childAt(element0, [5]);
         var morphs = new Array(4);
         morphs[0] = dom.createElementMorph(element1);
-        morphs[1] = dom.createAttrMorph(element2, 'src');
-        morphs[2] = dom.createElementMorph(element3);
+        morphs[1] = dom.createMorphAt(element0, 3, 3);
+        morphs[2] = dom.createElementMorph(element2);
         morphs[3] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
         return morphs;
       },
-      statements: [["element", "action", ["previousNews"], [], ["loc", [null, [2, 12], [2, 37]]]], ["attribute", "src", ["concat", [["get", "model.0.url", ["loc", [null, [3, 19], [3, 30]]]]]]], ["element", "action", ["nextNews"], [], ["loc", [null, [4, 12], [4, 33]]]], ["content", "modal-slide", ["loc", [null, [7, 4], [7, 19]]]]],
+      statements: [["element", "action", ["previousNews"], [], ["loc", [null, [2, 12], [2, 37]]]], ["block", "each", [["get", "model", ["loc", [null, [3, 12], [3, 17]]]]], [], 0, null, ["loc", [null, [3, 4], [6, 13]]]], ["element", "action", ["nextNews"], [], ["loc", [null, [7, 12], [7, 33]]]], ["content", "modal-slide", ["loc", [null, [10, 4], [10, 19]]]]],
       locals: [],
-      templates: []
+      templates: [child0]
     };
   })());
 });

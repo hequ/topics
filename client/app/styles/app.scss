@@ -23,29 +23,72 @@ body {
 #title-bar {
     position: fixed;
     width: 100%;
-    height: 40px;
+    height: $title-bar-height;
+    background-color: #FFFFFF;
     border-bottom: 1px solid $title-bar-border-color;
 
     p.title-text {
         position: relative;
-        line-height: 40px;
+        line-height: $title-bar-height;
         margin: 0 0 0 20px;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
 #main-content {
-    position: relative;
-    top: 40px + $content-top-margin;
+    position: absolute;
+    width: 100%;
+    top: $title-bar-height + $content-top-margin;
+    bottom: 20px;
 
+    // index page
     .keyword-container {
         position: relative;
-        display: flex;
         margin: 0 20px;
 
         a {
             margin-right: 20px;
         }
+    }
+
+    // news page
+    .left-side {
+        position: relative;
+        height: 100%;
+        width: 55%;
+        float: left;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        margin-left: 10px;
+
+        button.previous {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+        }
+
+        button.next {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+        }
+
+        .iframe-container {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000000;
+            margin: 0 10px 10px 0;
+        }
+    }
+
+    .right-side {
+        position: relative;
+        height: 100%;
+        width: 35%;
+        float: right;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        margin-right: 10px;
     }
 }

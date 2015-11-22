@@ -1,7 +1,10 @@
 <div class="left-side">
-    <button {{action "previousNews"}}>Previous</button>
-    <iframe src="{{model.0.url}}"></iframe>
-    <button {{action "nextNews"}}>Next</button>
+    <button {{action "previousNews"}} class="previous">Previous</button>
+    {{#each model as |news|}}
+        {{!-- <iframe src="{{news.link}}"></iframe> --}}
+        <div class="iframe-container"></div>
+    {{/each}}
+    <button {{action "nextNews"}} class="next">Next</button>
 </div>
 <div class="right-side">
     {{modal-slide}}
