@@ -1,0 +1,16 @@
+{
+  "name": "topic.io",
+  "version": "1.0.0",
+  "description": "Topic.io prototype",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hequ/topics.git"
+  },
+  "author": "Henri Kinnunen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hequ/topics/issues"
+  },
+  "homepage": "https://github.com/hequ/topics#readme"
+}
