@@ -7,10 +7,20 @@
     "type": "git",
     "url": "git+https://github.com/hequ/topics.git"
   },
-  "author": "Henri Kinnunen",
+  "contributors": [
+    {
+      "name": "Henri Kinnunen"
+    },
+    {
+      "name": "Anssi Kinnunen"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hequ/topics/issues"
+  },
+  "engines": {
+    "node": "~0.12.8"
   },
   "homepage": "https://github.com/hequ/topics#readme",
   "dependencies": {
@@ -20,5 +30,11 @@
     "express": "^4.13.3",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "stanford-corenlp": "^0.3.5",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
