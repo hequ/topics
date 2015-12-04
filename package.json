@@ -31,11 +31,11 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "browserify": "^12.0.1",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
-    "stanford-corenlp": "^0.3.5",
-    "vinyl-source-stream": "^1.1.0"
+    "stanford-corenlp": "^0.3.5"
   },
 
   "scripts": {
