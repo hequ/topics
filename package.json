@@ -29,12 +29,17 @@
     "babelify": "^7.2.0",
     "express": "^4.13.3",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0"
   },
   "devDependencies": {
-    "browserify": "^12.0.1",
-    "gulp": "^3.9.0",
     "stanford-corenlp": "^0.3.5",
     "vinyl-source-stream": "^1.1.0"
+  },
+
+  "scripts": {
+    "start": "node app.js",
+    "build": "gulp build"
   }
 }
