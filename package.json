@@ -20,7 +20,7 @@
     "url": "https://github.com/hequ/topics/issues"
   },
   "engines": {
-    "node": "~0.12.8"
+    "node": "0.12.8"
   },
   "homepage": "https://github.com/hequ/topics#readme",
   "dependencies": {
